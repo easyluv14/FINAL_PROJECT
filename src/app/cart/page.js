@@ -1,6 +1,7 @@
 'use client';
 import Link from 'next/link';
 import { useCart } from '../../../context/CartContext';
+import Image from 'next/image';
 
 export default function CartPage() {
   const { cartItems, removeFromCart, updateQuantity } = useCart();
@@ -41,7 +42,7 @@ export default function CartPage() {
               </svg>
             </div>
             <h2 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-2">Your cart is empty</h2>
-            <p className="text-gray-600 mb-6 sm:mb-8 px-4">Looks like you haven't added any items to your cart yet.</p>
+            <p className="text-gray-600 mb-6 sm:mb-8 px-4">Looks like you haven&apos;t added any items to your cart yet.</p>
             <Link 
               href="/" 
               className="inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-600 hover:bg-blue-700 transition-colors w-full max-w-xs mx-auto sm:w-auto"
@@ -64,7 +65,7 @@ export default function CartPage() {
                       <div className="flex flex-col sm:flex-row sm:items-start space-y-4 sm:space-y-0 sm:space-x-4">
                         {/* Product Image */}
                         <div className="flex-shrink-0 mx-auto sm:mx-0">
-                          <img
+                          <Image
                             src={item.image || '/placeholder.jpg'}
                             alt={item.name}
                             className="w-32 h-32 sm:w-24 sm:h-24 object-cover rounded-lg border border-gray-200"

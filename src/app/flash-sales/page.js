@@ -286,7 +286,7 @@ const FlashSalesPage = () => {
               Style Waiting Room 👗
             </h2>
             <p className="text-pink-100 text-base sm:text-xl mb-6 sm:mb-8 max-w-2xl mx-auto px-2">
-              Join thousands who've already upgraded their wardrobe. These exclusive pieces won't last!
+              Join thousands who&apos;ve already upgraded their wardrobe. These exclusive pieces won&apos;t last!
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-8">
               <div className="bg-white bg-opacity-20 backdrop-blur-sm px-4 sm:px-6 py-3 sm:py-4 rounded-xl sm:rounded-2xl">
@@ -308,7 +308,7 @@ const FlashSalesPage = () => {
         {/* Fashion Quote - Mobile responsive */}
         <div className="text-center mt-8 sm:mt-12 px-4">
           <p className="text-gray-500 text-sm sm:text-lg italic font-light">
-            "Fashion is about dressing according to what's fashionable. Style is more about being yourself." 
+            &quot;Fashion is about dressing according to what&apos;s fashionable. Style is more about being yourself.&quot; 
           </p>
           <p className="text-gray-400 text-xs sm:text-sm mt-2">– Oscar de la Renta</p>
         </div>
