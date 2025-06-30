@@ -10,7 +10,7 @@ import ProductList from "../../components/productList";
 
 export default function Home() {
   return (
-    <div className="bg-gray-50">
+    <div className="bg-white">
       <HeroSection />
      <div className="container mx-auto px-4 ">
       <ProductCarousel />

@@ -4,6 +4,7 @@ import { Heart } from 'lucide-react';
 
 const ProductCard = ({ product }) => {
   const [isLiked, setIsLiked] = useState(false);
+  
 
   const handleLikeClick = () => {
     setIsLiked(!isLiked);

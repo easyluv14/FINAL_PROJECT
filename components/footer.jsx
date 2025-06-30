@@ -62,7 +62,7 @@ export default function Footer() {
             </ul>
 
             {/* SOCIAL MEDIA */}
-            <div className="text-center pt-10 pr-4">
+            <div className="text-center pt-10 pr-10">
               <h4 className="font-bold mb-2">CONNECT WITH US</h4>
               <div className="flex gap-4 justify-center">
                 <div className="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center cursor-pointer hover:bg-gray-600">
