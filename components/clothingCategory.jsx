@@ -278,12 +278,9 @@ export default function AdvancedClothingStore() {
     };
   };
 
-  const [selectedCategory, setSelectedCategory] = useState(() => getUrlParams().category);
-  const [selectedSubcategory, setSelectedSubcategory] = useState(() => getUrlParams().subcategory);
-  const [openCategory, setOpenCategory] = useState(() => {
-    const category = getUrlParams().category;
-    return category !== 'All' ? category : null;
-  });
+  const [selectedCategory, setSelectedCategory] = useState('All');
+const [selectedSubcategory, setSelectedSubcategory] = useState('All');
+  const [openCategory, setOpenCategory] = useState(null);
   const [viewMode, setViewMode] = useState("grid");
   const [sortBy, setSortBy] = useState("featured");
   const [showFilters, setShowFilters] = useState(false);
@@ -299,7 +296,12 @@ export default function AdvancedClothingStore() {
     message: "",
     type: "cart",
   });
-
+useEffect(() => {
+  const urlParams = getUrlParams();
+  setSelectedCategory(urlParams.category);
+  setSelectedSubcategory(urlParams.subcategory);
+  setOpenCategory(urlParams.category !== 'All' ? urlParams.category : null);
+}, []);
   // Update URL when category changes
   const updateURL = (category, subcategory = 'All') => {
     const params = new URLSearchParams();

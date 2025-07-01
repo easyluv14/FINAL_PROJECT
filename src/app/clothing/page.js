@@ -1,4 +1,4 @@
-'use client'
+
 import ClothingCategory from '../../../components/clothingCategory';
 
 export default function ClothingPage() {
